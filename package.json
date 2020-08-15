@@ -1,15 +1,18 @@
 {
   "name": "@ibuk/epubjs-rn",
-  "version": "0.2.40",
-  "repository": "https://github.com/ottofeller/epubjs-rn",
+  "version": "0.2.41",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibuk-id/epubjs-rn.git"
+  },
   "main": "./components/index.js",
   "private": false,
   "scripts": {
     "start": "node EpubReader/node_modules/react-native/local-cli/cli.js start",
     "contents": "webpack --config contents/webpack.config.js",
-    "build": "./node_modules/.bin/babel src/ -d components/",
-    "watch": "./node_modules/.bin/babel src/ -d components/ -w",
-    "local": "./node_modules/.bin/gulp watch",
+    "build": "babel src/ -d components/",
+    "watch": "babel src/ -d components/ -w",
+    "local": "gulp watch",
     "prepublishOnly": "npm run build"
   },
   "license": "BSD-2-Clause",
@@ -59,5 +62,14 @@
     "components",
     "package.json",
     "epubjs-rn.podspec"
-  ]
+  ],
+  "description": "Epub.js React Native Components ================================",
+  "bugs": {
+    "url": "https://github.com/ibuk-id/epubjs-rn/issues"
+  },
+  "homepage": "https://github.com/ibuk-id/epubjs-rn#readme",
+  "keywords": [
+    "epubjs-rn"
+  ],
+  "author": "Prastowo Agung Widodo <agung@ibuk.id>"
 }
